@@ -36,10 +36,10 @@ module RunteqNormal
       g.skip_routes true
       g.test_framework :rspec,    # RSpecを使用
       controller_specs: false,  # controller specは作らない
-      view_specs: false        # view specは作らない
-      # そもそも生成していないファイルはテストの自動生成対象にならない
-      # helper_specs: false,      # helper specは作らない
-      # routing_specs: false 
+      view_specs: false,        # view specは作らない
+      helper_specs: false,      # helper specは作らない
+      routing_specs: false,
+      request_specs: false 
     end
   end
 end
