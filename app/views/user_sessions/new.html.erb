@@ -1,11 +1,11 @@
 <div class="container">
   <div class="row">
     <div class=" col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-      <h1>ログイン</h1>
+      <h1><%= t('.title') %></h1>
       <%= render 'form' %>
       <div class='text-center'>
-        <%= link_to '登録ページへ', new_user_path %>
-        <%= link_to 'パスワードをお忘れの方はこちら', "#" %>
+        <%= link_to t('.to_register_page'), new_user_path %>
+        <%= link_to t('.to_forgetpassword_page'), "#" %>
       </div>
     </div>
   </div>

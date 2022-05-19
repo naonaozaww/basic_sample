@@ -1,0 +1,23 @@
+ja:
+  defaults:
+    register: 登録
+    login: ログイン
+    logout: ログアウト
+    edit: 編集
+    destroy: 削除
+    show: 詳細
+    back: 戻る
+    board_index: 掲示板一覧
+    profile: プロフィール
+  
+  users:
+    new:
+      title: ユーザー登録
+      to_login_page: ログインページへ
+    show:
+      edit: 編集
+  user_sessions:
+    new:
+      title: ログイン
+      to_register_page: 登録ページへ
+      to_forgetpassword_page: パスワードをお忘れの方はこちらへ
