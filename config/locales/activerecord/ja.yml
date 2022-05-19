@@ -10,9 +10,3 @@ ja:
         email: メールアドレス
         password: パスワード
         password_confirmation: パスワード確認
-  user_sessions:
-    create:
-      success: ログインしました
-      failed: ログインに失敗しました
-    destroy:
-      success: ログアウトしました

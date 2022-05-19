@@ -16,8 +16,16 @@ ja:
       to_login_page: ログインページへ
     show:
       edit: 編集
+    create:
+      success: ユーザー登録が完了しました
+      failed: ユーザー登録が失敗しました
   user_sessions:
     new:
       title: ログイン
       to_register_page: 登録ページへ
       to_forgetpassword_page: パスワードをお忘れの方はこちらへ
+    create:
+      success: ログインしました
+      failed: ログインに失敗しました
+    destroy:
+      success: ログアウトしました
