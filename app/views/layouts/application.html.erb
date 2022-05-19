@@ -18,8 +18,7 @@
       <% end %>
     </div>
     <div>
-      <p id="notice"><%= flash[:notice] %></p>
-      <p id="alert"><%= flash[:alert] %></p>
+      <%= render 'shared/flash_message' %>
     </div>
     <%= yield %>
     <%= render 'shared/footer' %>
