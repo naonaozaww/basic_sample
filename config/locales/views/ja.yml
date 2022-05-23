@@ -1,8 +1,7 @@
 ja:
   defaults:
-    register: 登録
+    register: 登録する
     login: ログイン
-    require_login: ログインしてください
     logout: ログアウト
     edit: 編集
     destroy: 削除
@@ -10,6 +9,10 @@ ja:
     back: 戻る
     board_new: 掲示板作成
     profile: プロフィール
+    message:
+      require_login: ログインしてください
+      create: "%{item}を作成しました"
+      not_create: "%{item}を作成できませんでした"
   
   users:
     new:
@@ -32,5 +35,7 @@ ja:
       success: ログアウトしました
   boards:
     index:
-    title: 掲示板一覧
+      title: 掲示板一覧
       no_result: 掲示板がありません
+    new:
+      title: 掲示板作成
