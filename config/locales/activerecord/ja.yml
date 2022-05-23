@@ -12,7 +12,7 @@ ja:
         password_confirmation: パスワード確認
       board:
         title: タイトル
-        body: ボディ
+        body: 本文
       id: ID
       created_at: 作成日時
       updated_at: 更新日時
