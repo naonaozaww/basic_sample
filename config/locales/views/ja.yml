@@ -2,12 +2,13 @@ ja:
   defaults:
     register: 登録
     login: ログイン
+    require_login: ログインしてください
     logout: ログアウト
     edit: 編集
     destroy: 削除
     show: 詳細
     back: 戻る
-    board_index: 掲示板一覧
+    board_new: 掲示板作成
     profile: プロフィール
   
   users:
@@ -29,3 +30,7 @@ ja:
       failed: ログインに失敗しました
     destroy:
       success: ログアウトしました
+  boards:
+    index:
+    title: 掲示板一覧
+      no_result: 掲示板がありません
