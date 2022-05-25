@@ -1,0 +1,8 @@
+<div class='mr10 float-right'>
+  <%= link_to '#', class: 'mr-1', id: "button-edit-#{board.id}" do %>
+    <%= icon 'fa', 'pen' %>
+  <% end %>
+  <%= link_to '#', id: "button-delete-#{board.id}", method: :delete, data: {confirm: 'Are You Sure?'} do %>
+    <%= icon 'fas', 'trash' %>
+  <% end %>
+</div>

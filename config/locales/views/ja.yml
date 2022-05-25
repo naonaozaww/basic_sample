@@ -1,6 +1,7 @@
 ja:
   defaults:
     register: 登録する
+    post: 投稿する
     login: ログイン
     logout: ログアウト
     edit: 編集
@@ -39,3 +40,5 @@ ja:
       no_result: 掲示板がありません
     new:
       title: 掲示板作成
+    show:
+      title: 掲示板詳細
