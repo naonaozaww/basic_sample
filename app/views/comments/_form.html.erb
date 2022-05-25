@@ -1,0 +1,8 @@
+<%= form_with model: comment, url: [ board, comment ], local: true do |f| %>
+<%= render 'shared/error_messages', object: f.object %>
+  <div class="form-group">
+    <%= f.label :body %>
+    <%= f.text_area :body, class: 'form-control mb-3', id: 'js-new-comment-body', row: 4, placeholder: Comment.human_attribute_name(:body) %>
+  </div>
+  <%= f.submit t('defaults.post'), class: 'btn btn-primary' %>
+<% end %>
