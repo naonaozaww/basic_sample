@@ -2,7 +2,7 @@
   <%= link_to edit_board_path(board), class: 'mr-1', id: "button-edit-#{board.id}" do %>
     <%= icon 'fa', 'pen' %>
   <% end %>
-  <%= link_to board_path(board), id: "button-delete-#{board.id}", method: :delete, data: {confirm: t('defautls.message.delete_confirm')} do %>
+  <%= link_to board_path(board), id: "button-delete-#{board.id}", method: :delete, data: {confirm: t('defaults.message.delete_confirm')} do %>
     <%= icon 'fas', 'trash' %>
   <% end %>
 </div>
