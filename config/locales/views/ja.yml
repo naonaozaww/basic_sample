@@ -12,8 +12,12 @@ ja:
     profile: プロフィール
     message:
       require_login: ログインしてください
+      delete_confirm: 削除しますか？
       create: "%{item}を作成しました"
       not_create: "%{item}を作成できませんでした"
+      update: "%{item}を更新しました"
+      not_update: "%{item}を更新できませんでした"
+      destroy: "%{item}を削除しました"
   
   users:
     new:
@@ -42,3 +46,5 @@ ja:
       title: 掲示板作成
     show:
       title: 掲示板詳細
+    edit:
+      title: 掲示板編集
