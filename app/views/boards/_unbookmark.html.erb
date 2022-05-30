@@ -1,0 +1,5 @@
+<!-- bookmarkを検索して送る力技...よくないんじゃね？ -->
+<!-- boardをparams[:id]として送る方が見栄えが良く感じる -->
+<%= link_to bookmark_path(board.bookmarks.find {|b| b.user_id == current_user.id}), id: "js-bookmark-button-for-board-#{board.id}", class:"float-right", method: :delete do %>
+  <%= icon 'fas', 'star' %>
+<% end %>

@@ -3,6 +3,10 @@ class User < ApplicationRecord
 
   has_many :boards, dependent: :destroy
   has_many :comments, dependent: :destroy
+  has_many :bookmarks, dependent: :destroy
+  # has_many :メソッド, through: :中間テーブル, source: :必要な情報元
+  # sourceはメソッドとモデルが異なる場合に必要となる
+  has_many :bookmark_boards, through: :bookmarks, source: :board
 
   validates :last_name, presence: true, length: { maximum: 255 }
   validates :first_name, presence: true, length: { maximum: 255 }
@@ -14,5 +18,17 @@ class User < ApplicationRecord
 
   def own?(object)
     id == object.user_id
+  end
+
+  def bookmark?(board)
+    board.bookmarks.pluck(:user_id).include?(id)
+  end
+
+  def bookmark(board)
+    bookmark_boards << board
+  end
+
+  def unbookmark(board)
+    bookmark_boards.destroy(board)
   end
 end

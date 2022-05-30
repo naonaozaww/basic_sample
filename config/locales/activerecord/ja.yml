@@ -4,6 +4,7 @@ ja:
       user: ユーザー
       board: 掲示板
       comment: コメント
+      bookmark: ブックマーク
     attributes:
       user:
         first_name: 名
