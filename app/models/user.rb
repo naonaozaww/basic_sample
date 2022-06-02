@@ -21,8 +21,7 @@ class User < ApplicationRecord
   end
 
   def bookmark?(board)
-    bookmark_boards.include?(board)
-    #board.bookmarks.pluck(:user_id).include?(id)
+    board.bookmarks.pluck(:user_id).include?(id)
   end
 
   def bookmark(board)
