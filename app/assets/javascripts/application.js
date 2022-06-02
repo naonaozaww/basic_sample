@@ -17,3 +17,4 @@
 //= require activestorage
 //= require cable
 //= require common
+//= require edit_comment

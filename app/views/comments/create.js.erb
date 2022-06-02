@@ -1,0 +1,11 @@
+<!-- エラーメッセージを消す(エラー後の挙動のため) -->
+$("#error_explanation").remove()
+<% if @comment.errors.present? %>
+<!-- エラーがある場合はエラーフォームを挿入する -->
+  $("#new_comment").prepend("<%= j(render('shared/error_messages', object: @comment)) %>")
+<% else %>
+<!-- commentのviewをレンダリングして一番上に挿入する -->
+  $("#js-table-comment").prepend("<%= j(render('comments/comment', comment: @comment)) %>")
+<!-- 入力フォームのvalを空にして消す -->
+  $("#js-new-comment-body").val('')
+<% end %>
