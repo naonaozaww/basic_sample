@@ -6,4 +6,14 @@ class Board < ApplicationRecord
   mount_uploader :board_image, ImageUploader
   validates :title, presence: true, length: { maximum: 255 }
   validates :body, presence: true, length: { maximum: 65_535 }
+
+  private
+
+  def self.ransackable_attributes(auth_abject = nil)
+    %w[title body]
+  end
+
+  def self.ransackable_associations(auth_object = nil)
+    []
+  end
 end

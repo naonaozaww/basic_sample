@@ -12,6 +12,7 @@ class CommentsController < ApplicationController
       render json: { comment: @comment }, status: :ok
     else
       render json: { comment: @comment, errors: { messages: @comment.errors.full_messages } }, status: :bad_request
+      
     end
   end
 
