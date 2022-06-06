@@ -10,6 +10,7 @@ ja:
     back: 戻る
     board_new: 掲示板作成
     profile: プロフィール
+    search_word: 検索
     message:
       require_login: ログインしてください
       delete_confirm: 削除しますか？
