@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resources :comments, shallow: true
     get 'bookmarks', on: :collection
   end
+  resource :profile
 
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
