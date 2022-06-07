@@ -1,10 +1,12 @@
 ja:
   defaults:
+    full_name: 氏名
     register: 登録する
     post: 投稿する
     login: ログイン
     logout: ログアウト
     edit: 編集
+    update: 更新
     destroy: 削除
     show: 詳細
     back: 戻る
@@ -54,3 +56,8 @@ ja:
     bookmarks:
       title: ブックマーク一覧
       no_result: ブックマーク中の掲示板がありません
+  profiles:
+    show:
+      title: プロフィール
+    edit:
+      title: プロフィール編集
