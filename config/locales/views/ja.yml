@@ -3,6 +3,7 @@ ja:
     full_name: 氏名
     register: 登録する
     post: 投稿する
+    send: 送信する
     login: ログイン
     logout: ログアウト
     edit: 編集
@@ -17,12 +18,14 @@ ja:
       require_login: ログインしてください
       delete_confirm: 削除しますか？
       create: "%{item}を作成しました"
+      change: "%{item}を変更しました"
       not_create: "%{item}を作成できませんでした"
       update: "%{item}を更新しました"
       not_update: "%{item}を更新できませんでした"
       destroy: "%{item}を削除しました"
       bookmark: ブックマークしました
       unbookmark: ブックマークを外しました
+      password_reset_mail_send: パスワードリセット手順を送信しました
   
   users:
     new:
@@ -61,3 +64,8 @@ ja:
       title: プロフィール
     edit:
       title: プロフィール編集
+  password_resets:
+    new:
+      title: パスワードリセット申請
+    edit:
+      title: パスワードリセット
