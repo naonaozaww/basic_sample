@@ -26,6 +26,7 @@ ja:
       bookmark: ブックマークしました
       unbookmark: ブックマークを外しました
       password_reset_mail_send: パスワードリセット手順を送信しました
+      not_authorized: 権限がありません
   
   users:
     new:
@@ -69,3 +70,17 @@ ja:
       title: パスワードリセット申請
     edit:
       title: パスワードリセット
+
+  admin:
+    user_sessions:
+      new:
+        title: ログイン
+      create:
+        success: ログインしました
+        failed: ログインに失敗しました
+      destroy:
+        success: ログアウトしました
+    dashboards:
+      index:
+        title: ダッシュボード
+      
