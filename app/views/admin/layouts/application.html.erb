@@ -8,6 +8,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'admin', media: 'all' %>
+    <%= javascript_include_tag 'admin' %>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   </head>
 
@@ -27,6 +28,5 @@
       <%= render 'admin/shared/footer' %>
     
     </div>
-    <%= javascript_include_tag 'admin' %>
   </body>
 </html>

@@ -1,6 +1,7 @@
 ja:
   defaults:
     full_name: 氏名
+    author: 作成者
     register: 登録する
     post: 投稿する
     send: 送信する
@@ -9,11 +10,13 @@ ja:
     edit: 編集
     update: 更新
     destroy: 削除
+    delete: 削除
     show: 詳細
     back: 戻る
     board_new: 掲示板作成
     profile: プロフィール
     search_word: 検索
+    unspecified: 指定なし
     message:
       require_login: ログインしてください
       delete_confirm: 削除しますか？
@@ -83,4 +86,18 @@ ja:
     dashboards:
       index:
         title: ダッシュボード
+    users:
+      index:
+        title: ユーザー一覧
+      show:
+        title: ユーザー詳細
+      edit:
+        title: ユーザー編集
+    boards:
+      index:
+        title: 掲示板一覧
+      show:
+        title: 掲示板詳細
+      edit:
+        title: 掲示板編集
       

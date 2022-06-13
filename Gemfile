@@ -33,6 +33,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 4.6.1'
 gem 'carrierwave', '~> 2.0'
+gem 'enum_help'
 gem "mini_magick"
 gem 'font-awesome-sass', '~> 5.15.1'
 gem 'config'

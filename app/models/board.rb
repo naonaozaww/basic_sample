@@ -10,7 +10,7 @@ class Board < ApplicationRecord
   private
 
   def self.ransackable_attributes(auth_abject = nil)
-    %w[title body]
+    %w[title body created_at]
   end
 
   def self.ransackable_associations(auth_object = nil)
