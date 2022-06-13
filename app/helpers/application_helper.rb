@@ -7,4 +7,8 @@ module ApplicationHelper
                  end
     page_title.empty? ? base_title : page_title + ' | ' + base_title
   end
+
+  def active_if(path)
+    path == controller_path ? 'active' : ''
+  end
 end
